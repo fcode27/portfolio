@@ -1,5 +1,5 @@
-import PROJECTS from '@/data/projects'
-import { AspectRatio } from '@/components/ui/aspect-ratio'
+import PROJECTS from "@/data/projects";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export default function Work() {
   return (
@@ -14,14 +14,18 @@ export default function Work() {
               key={id}
             >
               <AspectRatio
-                className="border-border shadow-shadow rounded-base -bottom-[2px]! border-2"
-                ratio={71 / 26}
+                className={`flex justify-center gap-24 rounded-base -bottom-[2px]! border-border shadow-shadow border-2`}
+                ratio={2}
               >
-                <img
-                  className="rounded-base w-full"
-                  src={`${project.previewImage}`}
-                  alt={project.name}
-                />
+                {project.previewImages.length >= 1 ? project.previewImages.map((image, index) => (
+                  <img
+                    key={`${project.name} preview ${index + 1}`}
+                    className="center rounded-base object-cover h-full"
+                    src={`${image}`}
+                    alt={`${project.name} preview ${index + 1}`}
+                  />
+                )) : null}
+                
               </AspectRatio>
 
               <div className="text-main-foreground font-base mt-5">
@@ -49,9 +53,9 @@ export default function Work() {
                 </div>
               </div>
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
+  );
 }

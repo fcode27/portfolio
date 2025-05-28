@@ -4,27 +4,23 @@ import {
   SiGmail,
   SiLinkedin,
   SiMedium,
-} from '@icons-pack/react-simple-icons'
+} from "@icons-pack/react-simple-icons";
 
 export default function Links() {
   const links: { icon: IconType; href: string }[] = [
     {
       icon: SiGmail,
-      href: 'mailto:johndoe@gmail.com',
+      href: "mailto:freddyrp16@gmail.com",
     },
     {
       icon: SiGithub,
-      href: 'https://github.com/johndoe',
+      href: "https://github.com/fcode27",
     },
     {
       icon: SiLinkedin,
-      href: 'https://www.linkedin.com/in/johndoe/',
+      href: "https://www.linkedin.com/in/freddy-f-romero-p-3900a8b6/",
     },
-    {
-      icon: SiMedium,
-      href: 'https://medium.com/@johndoe',
-    },
-  ]
+  ];
 
   return (
     <div className="mr-auto mt-20 flex w-full flex-wrap items-center gap-10">
@@ -33,8 +29,8 @@ export default function Links() {
           <a target="_blank" key={id} href={link.href}>
             <link.icon title="" />
           </a>
-        )
+        );
       })}
     </div>
-  )
+  );
 }

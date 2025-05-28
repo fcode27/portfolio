@@ -13,68 +13,76 @@ import {
   SiNodedotjs,
   SiPostgresql,
   SiReact,
-  SiRedis,
-  SiRubyonrails,
   SiSass,
   SiTailwindcss,
-} from '@icons-pack/react-simple-icons'
+  SiSwift,
+  SiAndroid,
+  SiKotlin,
+  SiIos,
+  SiTypescript,
+} from "@icons-pack/react-simple-icons";
 
 const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
   [
     {
-      field: 'Frontend',
+      field: "Mobile",
       skills: [
-        { skill: 'html', icon: SiHtml5 },
-        { skill: 'css', icon: SiCss3 },
-        { skill: 'javascript', icon: SiJavascript },
-        { skill: 'react', icon: SiReact },
-        { skill: 'sass', icon: SiSass },
-        { skill: 'tailwind', icon: SiTailwindcss },
-        { skill: 'nextjs', icon: SiNextdotjs },
-        { skill: 'astro', icon: SiAstro },
+        { skill: "android", icon: SiAndroid },
+        { skill: "ios", icon: SiIos },
+        { skill: "kotlin", icon: SiKotlin },
+        { skill: "swift", icon: SiSwift },
+        { skill: "react native", icon: SiReact },
+      ],
+    },
+    {
+      field: "Frontend",
+      skills: [
+        { skill: "html", icon: SiHtml5 },
+        { skill: "css", icon: SiCss3 },
+        { skill: "javascript", icon: SiJavascript },
+        { skill: "react", icon: SiReact },
+        { skill: "sass", icon: SiSass },
+        { skill: "tailwind", icon: SiTailwindcss },
+        { skill: "nextjs", icon: SiNextdotjs },
+        { skill: "iOS", icon: SiIos },
+        { skill: "nextjs", icon: SiAndroid },
+        { skill: "nextjs", icon: SiKotlin },
+        { skill: "nextjs", icon: SiSwift },
         {
-          skill: 'bootstrap',
+          skill: "bootstrap",
           icon: SiBootstrap,
         },
       ],
     },
     {
-      field: 'Backend',
+      field: "Backend",
       skills: [
         {
-          skill: 'nodejs',
+          skill: "nodejs",
           icon: SiNodedotjs,
         },
         {
-          skill: 'ruby on rails',
-          icon: SiRubyonrails,
-        },
-        {
-          skill: 'redis',
-          icon: SiRedis,
-        },
-        {
-          skill: 'postgresql',
+          skill: "postgresql",
           icon: SiPostgresql,
         },
         {
-          skill: 'mongodb',
+          skill: "mongodb",
           icon: SiMongodb,
         },
         {
-          skill: 'mysql',
+          skill: "mysql",
           icon: SiMysql,
         },
         {
-          skill: 'nginx',
+          skill: "nginx",
           icon: SiNginx,
         },
         {
-          skill: 'docker',
+          skill: "docker",
           icon: SiDocker,
         },
       ],
     },
-  ]
+  ];
 
-export default SKILLS
+export default SKILLS;

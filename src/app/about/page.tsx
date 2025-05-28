@@ -1,5 +1,5 @@
-import Experience from '@/components/sections/experience'
-import Skills from '@/components/sections/skills'
+import Experience from "@/components/sections/experience";
+import Skills from "@/components/sections/skills";
 
 export default function About() {
   return (
@@ -8,10 +8,15 @@ export default function About() {
 
       <div className="mb-10 text-base sm:text-lg">
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
-          consequatur, harum pariatur provident rerum placeat magni voluptas
-          consectetur in exercitationem nobis aut, molestiae iure possimus
-          aspernatur nesciunt laudantium ab atque.
+          With over 8 years of software development experience, I specialize in
+          mobile applications using React Native, as well as native development
+          with Kotlin and Swift. I have developed dynamic user interfaces with
+          React and worked extensively with backend frameworks such as Django,
+          Express, and ASP.NET to create robust APIs. My experience includes
+          using PostgreSQL and MongoDB for data management, as well as SQLite
+          and SQL databases. I also utilize TypeScript to enhance code quality.
+          This combination of mobile and backend expertise allows me to
+          effectively contribute to full-stack projects.
         </p>
       </div>
 
@@ -19,5 +24,5 @@ export default function About() {
 
       <Experience />
     </div>
-  )
+  );
 }
