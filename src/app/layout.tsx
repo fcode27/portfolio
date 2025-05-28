@@ -1,25 +1,29 @@
-import type { Metadata } from 'next'
-import { Montserrat } from 'next/font/google'
-import './globals.css'
-import Nav from '@/components/nav'
-import { ViewTransitions } from 'next-view-transitions'
-import { ThemeProvider } from '@/components/theme-provider'
+import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
+import "./globals.css";
+import Nav from "@/components/nav";
+import { ViewTransitions } from "next-view-transitions";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const montserrat = Montserrat({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'John Doe',
-}
+  title: "Freddy Romero Portfolio",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <ViewTransitions>
       <html suppressHydrationWarning lang="en">
-        <body className={montserrat.className}>
+        <body
+          className={`${montserrat.className} bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] 
+          dark:bg-[linear-gradient(to_right,#00000030_1px,transparent_1px),linear-gradient(to_bottom,#00000030_1px,transparent_1px)] 
+          bg-[size:36px_36px] bg-fixed min-h-screen`}
+        >
           <ThemeProvider attribute="class" disableTransitionOnChange>
             <Nav />
             <div className="text-foreground mx-auto w-[750px] max-w-full px-5 pt-28 pb-10">
@@ -29,5 +33,5 @@ export default function RootLayout({
         </body>
       </html>
     </ViewTransitions>
-  )
+  );
 }
