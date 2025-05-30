@@ -1,7 +1,5 @@
 import {
-  type IconType,
-  SiAstro,
-  SiBootstrap,
+  type IconType, SiBootstrap,
   SiCss3,
   SiDocker,
   SiHtml5,
@@ -19,7 +17,8 @@ import {
   SiAndroid,
   SiKotlin,
   SiIos,
-  SiTypescript,
+  SiPython,
+  
 } from "@icons-pack/react-simple-icons";
 
 const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
@@ -60,6 +59,10 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
         {
           skill: "nodejs",
           icon: SiNodedotjs,
+        },
+        {
+          skill: "python",
+          icon: SiPython,
         },
         {
           skill: "postgresql",
