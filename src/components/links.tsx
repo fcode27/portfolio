@@ -23,7 +23,7 @@ export default function Links() {
   ];
 
   return (
-    <div className="mr-auto mt-20 flex w-full flex-wrap items-center gap-10">
+    <div className="mr-auto mt-10 flex w-full flex-wrap items-center gap-10">
       {links.map((link, id) => {
         return (
           <a target="_blank" key={id} href={link.href}>
