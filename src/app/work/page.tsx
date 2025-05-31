@@ -46,7 +46,7 @@ export default function Work() {
               key={id}
             >
               <AspectRatio
-                className={` rounded-none flex flex-col justify-center items-center bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] flex justify-center gap-12 md:gap-24 rounded-base -bottom-[2px]! border-border shadow-shadow border-2 overflow-hidden`}
+                className={` rounded-none flex flex-col justify-center items-center bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] flex justify-center gap-1 sm:gap-5 md:gap-24 rounded-base -bottom-[2px]! border-border shadow-shadow border-2 overflow-hidden`}
                 ratio={3}
               >
                 <Sheet key={project.side}>
@@ -66,13 +66,13 @@ export default function Work() {
                           ? project.previewImages.map((image, index) => (
                               <div
                                 key={`${project.name} preview ${index + 1}`}
-                                className="flex-1 flex justify-center items-center min-w-0"
+                                className="flex-1 flex justify-center items-center min-w-0 rounded-[5px]"
                                 style={{
                                   maxWidth: `${100 / project.previewImages.length}%`,
                                 }}
                               >
                                 <img
-                                  className="object-contain w-full h-60"
+                                  className="object-cover w-full h-60 rounded-[5px]"
                                   src={image}
                                   alt={`${project.name} preview ${index + 1}`}
                                 />
