@@ -61,15 +61,18 @@ export default function Work() {
                       <SheetTitle color="var(--foreground)">
                         {project.name}
                       </SheetTitle>
-                      <div className="flex border-border border-4 rounded-[5px] bg-white p-2.5 gap-2.5 rounded-none  bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px]  rounded-base -bottom-[2px]! border-border shadow-shadow border-2">
+                      <div className="flex border-border border-4 rounded-[5px] bg-white p-2.5 gap-2.5 rounded-none bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] rounded-base -bottom-[2px]! border-border shadow-shadow border-2">
                         {project.previewImages.length >= 1
                           ? project.previewImages.map((image, index) => (
                               <div
                                 key={`${project.name} preview ${index + 1}`}
-                                className={`w-1/${project.previewImages.length}`}
+                                className="flex-1 flex justify-center items-center min-w-0"
+                                style={{
+                                  maxWidth: `${100 / project.previewImages.length}%`,
+                                }}
                               >
                                 <img
-                                  className={`flex center object-scale-down `}
+                                  className="object-contain w-full h-60"
                                   src={image}
                                   alt={`${project.name} preview ${index + 1}`}
                                 />
