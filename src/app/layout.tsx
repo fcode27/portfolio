@@ -68,7 +68,9 @@ export default function RootLayout({
   return (
     <ViewTransitions>
       <html suppressHydrationWarning lang="en">
-        <PagesWrapper children={children} />
+        <PagesWrapper>
+          {children}
+        </PagesWrapper>
       </html>
     </ViewTransitions>
   );

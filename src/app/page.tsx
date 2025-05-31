@@ -9,7 +9,7 @@ export default function Home() {
       <h1 className="text-2xl font-heading sm:text-4xl">Freddy Romero</h1>
       <p className="mt-2 text-lg sm:text-xl">Software engineer</p>
       <div className="mt-8 text-base sm:text-lg pb-10">
-        <p>Hello! I'm Freddy Romero, a Software engineer from Caracas, VE</p>
+        <p>Hello! I’m Freddy Romero, a Software engineer from Caracas, VE</p>
         <br />
         <p>
           Here’s a glimpse of my work as a Software engineer. Click the{" "}
