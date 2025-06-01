@@ -21,7 +21,7 @@ export default function Home() {
 
         <div className="mr-auto mt-16 flex flex-col gap-4 sm:flex-row">
           <a
-            className="flex"
+            className="flex self-start"
             href="https://calendly.com/freddyrp/30min"
             target="_blank"
           >
