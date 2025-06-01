@@ -1,24 +1,20 @@
 import {
-  type IconType, SiBootstrap,
-  SiCss3,
+  type IconType, SiCss3,
   SiDocker,
   SiHtml5,
   SiJavascript,
   SiMongodb,
   SiMysql,
-  SiNextdotjs,
-  SiNginx,
-  SiNodedotjs,
+  SiNextdotjs, SiNodedotjs,
   SiPostgresql,
   SiReact,
   SiSass,
   SiTailwindcss,
   SiSwift,
   SiAndroid,
-  SiKotlin,
-  SiIos,
-  SiPython,
-  
+  SiKotlin, SiApple,
+  SiDjango,
+  SiDotnet
 } from "@icons-pack/react-simple-icons";
 
 const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
@@ -27,29 +23,42 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
       field: "Mobile",
       skills: [
         { skill: "android", icon: SiAndroid },
-        { skill: "ios", icon: SiIos },
+        { skill: "ios", icon: SiApple },
         { skill: "kotlin", icon: SiKotlin },
-        { skill: "swift", icon: SiSwift },
         { skill: "react native", icon: SiReact },
+        { skill: "swift", icon: SiSwift },
       ],
     },
     {
       field: "Frontend",
       skills: [
-        { skill: "html", icon: SiHtml5 },
-        { skill: "css", icon: SiCss3 },
-        { skill: "javascript", icon: SiJavascript },
-        { skill: "react", icon: SiReact },
-        { skill: "sass", icon: SiSass },
-        { skill: "tailwind", icon: SiTailwindcss },
-        { skill: "nextjs", icon: SiNextdotjs },
-        { skill: "iOS", icon: SiIos },
-        { skill: "nextjs", icon: SiAndroid },
-        { skill: "nextjs", icon: SiKotlin },
-        { skill: "nextjs", icon: SiSwift },
         {
-          skill: "bootstrap",
-          icon: SiBootstrap,
+          skill: "css",
+          icon: SiCss3,
+        },
+        {
+          skill: "html",
+          icon: SiHtml5,
+        },
+        {
+          skill: "javascript",
+          icon: SiJavascript,
+        },
+        {
+          skill: "nextjs",
+          icon: SiNextdotjs,
+        },
+        {
+          skill: "react",
+          icon: SiReact,
+        },
+        {
+          skill: "sass",
+          icon: SiSass,
+        },
+        {
+          skill: "tailwind",
+          icon: SiTailwindcss,
         },
       ],
     },
@@ -57,16 +66,16 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
       field: "Backend",
       skills: [
         {
-          skill: "nodejs",
-          icon: SiNodedotjs,
+          skill: "django",
+          icon: SiDjango,
         },
         {
-          skill: "python",
-          icon: SiPython,
+          skill: "ASP.NET",
+          icon: SiDotnet,
         },
         {
-          skill: "postgresql",
-          icon: SiPostgresql,
+          skill: "docker",
+          icon: SiDocker,
         },
         {
           skill: "mongodb",
@@ -77,12 +86,12 @@ const SKILLS: { field: string; skills: { skill: string; icon: IconType }[] }[] =
           icon: SiMysql,
         },
         {
-          skill: "nginx",
-          icon: SiNginx,
+          skill: "nodejs",
+          icon: SiNodedotjs,
         },
         {
-          skill: "docker",
-          icon: SiDocker,
+          skill: "postgresql",
+          icon: SiPostgresql,
         },
       ],
     },

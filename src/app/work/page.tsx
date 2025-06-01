@@ -25,7 +25,7 @@ export default function Work() {
             <div className="py-4 sm:py-5" key={id}>
               <AspectRatio
                 className={` rounded-none flex flex-col justify-center items-center bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] flex justify-center gap-1 xs:gap-5 sm:gap-16 rounded-base -bottom-[2px]! border-border shadow-shadow border-2 overflow-hidden`}
-                ratio={2.3}
+                ratio={3}
               >
                 <Sheet key={project.side}>
                   <h2 className="font-heading text-xl sm:text-2xl ">
