@@ -16,16 +16,16 @@ import Star9 from "@/components/ui/star9";
 
 export default function Work() {
   return (
-    <div className="">
-      <h1 className="font-heading mb-8 text-2xl sm:text-4xl m-5">Projects</h1>
+    <div>
+      <h1 className="font-heading mb-8 text-2xl sm:text-4xl">Projects</h1>
 
-      <div className="font-heading mb-8 text-2xl sm:text-4xl m-5">
+      <div className="font-heading mb-8 text-2xl sm:text-4xl m-0">
         {PROJECTS.map((project, id) => {
           return (
-            <div className="p-4 sm:p-5" key={id}>
+            <div className="py-4 sm:py-5" key={id}>
               <AspectRatio
                 className={` rounded-none flex flex-col justify-center items-center bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] flex justify-center gap-1 xs:gap-5 sm:gap-16 rounded-base -bottom-[2px]! border-border shadow-shadow border-2 overflow-hidden`}
-                ratio={2}
+                ratio={2.3}
               >
                 <Sheet key={project.side}>
                   <h2 className="font-heading text-xl sm:text-2xl ">
@@ -40,17 +40,7 @@ export default function Work() {
                         width={40}
                         height={40}
                       />
-
-                      {/* <Star9
-                        className="absolute sm:block hidden md:-bottom-4 md:-right-5 -top-5 -left-5.5"
-                        strokeWidth={4}
-                        color="var(--main)"
-                        stroke="var(--main-foreground)"
-                        width={40}
-                        height={40}
-                      /> */}
                     </span>
-                    <span></span>
                   </h2>
                   <SheetTrigger asChild>
                     <Button className="capitalize ">preview</Button>
@@ -60,18 +50,18 @@ export default function Work() {
                       <SheetTitle color="var(--foreground)">
                         {project.name}
                       </SheetTitle>
-                      <div className="flex border-border border-4 rounded-[5px] bg-white p-2.5 gap-2.5 rounded-none bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] rounded-base -bottom-[2px]! border-border shadow-shadow border-2">
+                      <div className="flex border-border border-4 rounded-[5px]  p-2.5 gap-2.5 rounded-none bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] rounded-base -bottom-[2px]! border-border shadow-shadow border-2 bg-secondary-background ">
                         {project.previewImages.length >= 1
                           ? project.previewImages.map((image, index) => (
                               <div
                                 key={`${project.name} preview ${index + 1}`}
-                                className="flex-1 flex justify-center items-center min-w-0 rounded-[5px] "
+                                className=" flex-1 flex justify-center items-center min-w-0 "
                                 style={{
                                   maxWidth: `${100 / project.previewImages.length}%`,
                                 }}
                               >
                                 <img
-                                  className="object-cover w-full h-60 rounded-[5px]"
+                                  className="object-cover w-full h-60 "
                                   src={image}
                                   alt={`${project.name} preview ${index + 1}`}
                                 />

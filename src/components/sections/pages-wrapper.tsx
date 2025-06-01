@@ -26,9 +26,11 @@ export default function PagesWrapper({
         <Nav />
         <div className="text-foreground mx-auto w-[750px] max-w-full px-5 pt-28 pb-10">
           {children}
-          <footer className="self-end mt-20 self-end w-full z-30  border-border px-5 py-5 text-center sm:text-base text-sm">
+          <footer
+            className={`self-end ${pathName === "/" ? "mt-35" : {}} self-end w-full z-30  border-border px-5 py-5 text-center sm:text-base text-sm`}
+          >
             © {new Date().getFullYear()} Remote Portfolio. Built with Next.js
-            &amp; Tailwind CSS. {" "}
+            &amp; Tailwind CSS.{" "}
             <a target="_blank" href="" className="underline font-heading ">
               Github
             </a>
