@@ -9,13 +9,14 @@
   --foreground: oklch(0% 0 0);
   --main-foreground: oklch(0% 0 0);
   --main: oklch(72.27% 0.1894 50.19);
+  --tertiary-background: #4b644a;
   --border: oklch(0% 0 0);
   --ring: oklch(0% 0 0);
   --overlay: oklch(0% 0 0 / 0.8);
   --shadow: 4px 4px 0px 0px var(--border);
   --chart-1: #FF7A05;
   --chart-2: #0099FF;
-  --chart-3: #FFBF00;
+  --chart-3: #fdbe01;
   --chart-4: #00D696;
   --chart-5: #7A83FF;
   --chart-active-dot: #000;
@@ -28,6 +29,7 @@
   --main-foreground: oklch(0% 0 0);
   --main: oklch(67.56% 0.1796 49.61);
   --border: oklch(0% 0 0);
+  --tertiary: #4b644a;
   --ring: oklch(100% 0 0);
   --shadow: 4px 4px 0px 0px var(--border);
   --chart-1: #EB6D00;
@@ -44,6 +46,7 @@
   --color-secondary-background: var(--secondary-background);
   --color-foreground: var(--foreground);
   --color-main-foreground: var(--main-foreground);
+  --color-tertiary-background: var(--tertiary-background);
   --color-border: var(--border);
   --color-overlay: var(--overlay);
   --color-ring: var(--ring);
