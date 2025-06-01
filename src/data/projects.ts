@@ -7,7 +7,7 @@ const PROJECTS: {
   side: "top" | "bottom" | "left" | "right" | undefined;
 }[] = [
   {
-    name: "Portfolio Website",
+    name: "Portfolio",
     description:
       "A personal portfolio project built with Next.js and TypeScript, designed to showcase a collection of software development projects. This responsive and dynamic website features a clean design and easy navigation, highlighting work with React, mobile applications, and backend technologies. Visitors can explore various projects and find contact information for inquiries.",
     liveLink: "",
@@ -69,7 +69,7 @@ const PROJECTS: {
       "A mobile application empowering truck drivers to communicate with customers via Envase Portfolio TMS, enabling load tracking, document management, signature collection, and more.",
     liveLink: "",
     previewImages: ["envase1.png", "envase2.png"],
-    repoUrl: "https://github.com",
+    repoUrl: "",
     side: "left",
   },
 ];
