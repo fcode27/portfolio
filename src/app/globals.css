@@ -61,7 +61,7 @@
   --shadow-shadow: var(--shadow);
   --font-weight-base: 500;
   --font-weight-heading: 700;
- 
+  --breakpoint-xs: 30rem;
 }
 
 body {
