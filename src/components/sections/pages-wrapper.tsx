@@ -24,10 +24,10 @@ export default function PagesWrapper({
     >
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <Nav />
-        <div className="text-foreground mx-auto w-[750px] max-w-full px-5 pt-28 pb-10">
+        <div className="text-foreground mx-auto w-[750px] max-w-full px-5 pt-28">
           {children}
           <footer
-            className={`self-end ${pathName === "/" ? "mt-35" : {}} self-end w-full z-30  border-border px-5 py-5 text-center sm:text-base text-sm`}
+            className={`self-end  self-end w-full z-30  border-border px-5 py-5 text-center sm:text-base text-sm`}
           >
             © {new Date().getFullYear()} Remote Portfolio. Built with Next.js
             &amp; Tailwind CSS.{" "}

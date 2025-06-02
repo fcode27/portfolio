@@ -5,7 +5,7 @@ import { SendIcon } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="font-base ">
+    <div className="font-base flex flex-col flex-1 min-h-[calc(100vh-64px-(var(--spacing)*28))] ">
       <h1 className="text-2xl font-heading sm:text-4xl">Freddy Romero</h1>
       <p className="mt-2 text-lg sm:text-xl">Software engineer</p>
       <div className="mt-8 text-base sm:text-lg pb-10">
@@ -31,7 +31,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      
+
       <Links />
     </div>
   );
