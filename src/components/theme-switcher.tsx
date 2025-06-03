@@ -19,7 +19,7 @@ export function ThemeSwitcher() {
   return (
     <>
       <Button
-        className="bg-trasparent"
+        className="bg-background"
         color="--var-primary"
         size={"sm"}
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}

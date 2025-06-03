@@ -28,7 +28,7 @@ export default function Work() {
                 ratio={3}
               >
                 <Sheet key={project.side}>
-                  <h2 className="font-heading text-xl sm:text-2xl ">
+                  <h2 className="font-heading text-sm xs:text-2xl ">
                     <span className="relative px-2 sm:mr-2 mr-0 bg-main/50 rounded-base border-2 border-border/40 dark:border-border/70">
                       {project.name}
 
