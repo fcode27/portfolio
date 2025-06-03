@@ -1,6 +1,6 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import PROJECTS from "@/data/projects";
-
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import {
@@ -60,11 +60,12 @@ export default function Work() {
                                   maxWidth: `${100 / project.previewImages.length}%`,
                                 }}
                               >
-                                <img
+                                 <img
                                   className="object-cover w-full h-60 "
                                   src={image}
                                   alt={`${project.name} preview ${index + 1}`}
                                 />
+                              
                               </div>
                             ))
                           : null}
