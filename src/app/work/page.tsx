@@ -60,12 +60,18 @@ export default function Work() {
                                   maxWidth: `${100 / project.previewImages.length}%`,
                                 }}
                               >
-                                 <img
+                                <Image
+                                  alt={`${project.name} preview ${index + 1}`}
+                                  src={image}
+                                  width={240}
+                                  height={240}
+                                  loading="eager"
+                                />
+                                {/* <img
                                   className="object-cover w-full h-60 "
                                   src={image}
                                   alt={`${project.name} preview ${index + 1}`}
-                                />
-                              
+                                /> */}
                               </div>
                             ))
                           : null}

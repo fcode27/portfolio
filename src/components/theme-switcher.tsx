@@ -2,15 +2,10 @@
 
 import {
   Moon,
-  Sun,
-  MoonIcon,
-  MoonStar,
-  MoonStarIcon,
-  SunMoon,
+  Sun
 } from "lucide-react";
 import { useTheme } from "next-themes";
 
-import * as React from "react";
 import { Button } from "./ui/button";
 
 export function ThemeSwitcher() {
