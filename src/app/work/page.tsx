@@ -76,7 +76,7 @@ export default function Work() {
                         width={200}
                         height={200}
                       />
-                      
+
                       <div className="flex border-border border-4 rounded-[5px]  p-2.5 gap-2.5 rounded-none bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] rounded-base -bottom-[2px]! border-border shadow-shadow border-2 bg-secondary-background ">
                         {project.previewImages.length >= 1
                           ? project.previewImages.map((image, index) => (
@@ -89,11 +89,13 @@ export default function Work() {
                               >
                                 <Image
                                   alt={`${project.name} preview ${index + 1}`}
-                                  src={image}
+                                src={image.previewImage}
+                                placeholder="blur"
                                   width={240}
                                   height={240}
                                   loading="eager"
                                   priority={true}
+                                  blurDataURL={image.blurredImage}
                                 />
                               </div>
                             ))
