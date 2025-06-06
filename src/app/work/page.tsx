@@ -66,6 +66,7 @@ export default function Work() {
                                   width={240}
                                   height={240}
                                   loading="eager"
+                                  priority={true}
                                 />
                                 {/* <img
                                   className="object-cover w-full h-60 "

@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Software Engineer Portfolio | Freddy Romero",
   description:
-    "Explore the portfolio of Freddy Romero, a passionate Software Engineer specializing in web development, mobile development, React Native, TypeScript, React, and modern technologies.",
+    "Explore the portfolio of Freddy Romero, a passionate Software Engineer specializing in mobile development, web, React Native, TypeScript, React, and modern technologies.",
   keywords: [
     "Software Engineer",
     "Portfolio",
@@ -22,13 +22,15 @@ export const metadata: Metadata = {
     "UI/UX",
     "Freddy Romero",
   ],
-  authors: [{ name: "Freddy Romero", url: "https://yourdomain.com" }],
+  authors: [
+    { name: "Freddy Romero", url: "https://fcode27.github.io/portfolio/" },
+  ],
   creator: "Freddy Romero",
   openGraph: {
     title: "Software Engineer Portfolio | Freddy Romero",
     description:
       "Showcasing projects, skills, and experience of Freddy Romero, a modern web developer and mobile developer.",
-    url: "https://yourdomain.com",
+    url: "https://fcode27.github.io/portfolio/",
     siteName: "Freddy Romero Portfolio",
     images: [
       {
@@ -64,15 +66,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
     <ViewTransitions>
       <html suppressHydrationWarning lang="en">
-        <PagesWrapper>
-          {children}
-        </PagesWrapper>
+        <PagesWrapper>{children}</PagesWrapper>
       </html>
     </ViewTransitions>
   );
 }
-
