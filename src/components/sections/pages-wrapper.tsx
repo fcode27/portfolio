@@ -31,7 +31,11 @@ export default function PagesWrapper({
           >
             © {new Date().getFullYear()} Remote Portfolio. Built with Next.js
             &amp; Tailwind CSS.{" "}
-            <a target="_blank" href="https://github.com/fcode27/portfolio" className="underline font-heading ">
+            <a
+              target="_blank"
+              href="https://github.com/fcode27/portfolio"
+              className="underline font-heading "
+            >
               Github
             </a>
             .

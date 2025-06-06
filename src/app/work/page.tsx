@@ -19,16 +19,22 @@ import Star9 from "@/components/ui/star9";
 export default function Work() {
   return (
     <div>
-      <h1 className="font-heading mb-8 text-2xl sm:text-4xl">Projects</h1>
-
+      <h1 className="block lg:hidden font-heading mb-8 text-2xl sm:text-4xl">Projects</h1>
+      <div className="w-screen -translate-x-1/2 left-9 text-center hidden lg:block top-1/2 fixed -z-10 border-4 border-border rounded-lg p-4  flex items-center justify-center bg-main -rotate-90">
+        <span className="text-2xl ml-20 font-heading text-foreground">
+          Projects
+        </span>
+      </div>
       <div className="font-heading mb-8 text-2xl sm:text-4xl m-0">
         {PROJECTS.map((project, id) => {
           return (
-            <div className="py-4 sm:py-5" key={id}>
+            <div className="py-4 sm:py-5 my-10" key={id}>
               <AspectRatio
-                className={` rounded-none flex flex-col justify-center items-center bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] flex justify-center gap-1 xs:gap-5 sm:gap-16 rounded-base -bottom-[2px]! border-border shadow-shadow border-2 overflow-hidden`}
+                className={` rounded-none flex flex-col justify-center items-center bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] flex justify-center gap-1 xs:gap-5 sm:gap-16 rounded-base -bottom-[2px]! border-border shadow-shadow border-2`}
                 ratio={3}
               >
+                <div className="w-1/5 absolute -top-5 -left-0.5 -z-10 border-2 shadow-shadow border-border rounded-md p-6 mb-4 flex items-center justify-center bg-secondary-background shadow-lg w-" />
+
                 <Sheet key={project.side}>
                   <h2 className="font-heading text-sm xs:text-2xl ">
                     <span className="relative px-2 sm:mr-2 mr-0 bg-main/50 rounded-base border-2 border-border/40 dark:border-border/70">
@@ -89,8 +95,8 @@ export default function Work() {
                               >
                                 <Image
                                   alt={`${project.name} preview ${index + 1}`}
-                                src={image.previewImage}
-                                placeholder="blur"
+                                  src={image.previewImage}
+                                  placeholder="blur"
                                   width={240}
                                   height={240}
                                   loading="eager"
@@ -113,7 +119,7 @@ export default function Work() {
                     </div>
                     <SheetFooter>
                       <SheetClose asChild>
-                        <Button type="submit">Continue</Button>
+                        <Button className="mx-10">Continue</Button>
                       </SheetClose>
                     </SheetFooter>
                   </SheetContent>

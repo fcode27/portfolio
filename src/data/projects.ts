@@ -8,6 +8,24 @@ const PROJECTS: {
   side: "top" | "bottom" | "left" | "right" | undefined;
 }[] = [
   {
+    name: "EV Navigator App",
+    description:
+      "An Android app developed in Kotlin that provides analytics for electric vehicles and maps charging stations. Users can track performance and find charging options.",
+    liveLink: "",
+    previewImages: [
+      {
+        previewImage: `${pathPrefix}ev1.png`,
+        blurredImage: `${pathPrefix}ev1-blur.png`,
+      },
+      {
+        previewImage: `${pathPrefix}ev2.png`,
+        blurredImage: `${pathPrefix}ev2-blur.png`,
+      },
+    ],
+    repoUrl: "",
+    side: "right",
+  },
+  {
     name: "Portfolio",
     description:
       "A personal portfolio project built with Next.js and TypeScript, designed to showcase a collection of software development projects. This responsive and dynamic website features a clean design and easy navigation, highlighting work with React, mobile applications, and backend technologies. Visitors can explore various projects and find contact information for inquiries.",
@@ -19,7 +37,7 @@ const PROJECTS: {
       },
     ],
     repoUrl: "",
-    side: "left",
+    side: "right",
   },
   {
     name: "Dining Decision Manager App",
@@ -37,26 +55,9 @@ const PROJECTS: {
       },
     ],
     repoUrl: "",
-    side: "left",
+    side: "right",
   },
-  {
-    name: "EV Navigator App",
-    description:
-      "An Android app developed in Kotlin that provides analytics for electric vehicles and maps charging stations. Users can track performance and find charging options.",
-    liveLink: "",
-    previewImages: [
-      {
-        previewImage: `${pathPrefix}ev1.png`,
-        blurredImage: `${pathPrefix}ev1-blur.png`,
-      },
-      {
-        previewImage: `${pathPrefix}ev2.png`,
-        blurredImage: `${pathPrefix}ev2-blur.png`,
-      },
-    ],
-    repoUrl: "",
-    side: "left",
-  },
+
   {
     name: "Fintech App",
     description:
@@ -73,7 +74,7 @@ const PROJECTS: {
       },
     ],
     repoUrl: "",
-    side: "left",
+    side: "right",
   },
   {
     name: "Festival Navigator App",
@@ -91,7 +92,7 @@ const PROJECTS: {
       },
     ],
     repoUrl: "",
-    side: "left",
+    side: "right",
   },
   {
     name: "Car Community Coordinator App",
@@ -109,7 +110,7 @@ const PROJECTS: {
       },
     ],
     repoUrl: "",
-    side: "left",
+    side: "right",
   },
   {
     name: "QuickShop Fashion App",
@@ -127,7 +128,7 @@ const PROJECTS: {
       },
     ],
     repoUrl: "",
-    side: "left",
+    side: "right",
   },
   {
     name: "Transport Finance Solutions App",
@@ -141,7 +142,7 @@ const PROJECTS: {
       },
     ],
     repoUrl: "",
-    side: "left",
+    side: "right",
   },
   {
     name: "Truck Driver Connect App",
@@ -159,7 +160,7 @@ const PROJECTS: {
       },
     ],
     repoUrl: "",
-    side: "left",
+    side: "right",
   },
 ];
 
