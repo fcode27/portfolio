@@ -1,7 +1,7 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Button } from "@/components/ui/button";
 import PROJECTS from "@/data/projects";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 import {
   Sheet,
@@ -12,6 +12,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Star20 from "@/components/ui/star20";
+import Star6 from "@/components/ui/star6";
 import Star9 from "@/components/ui/star9";
 
 export default function Work() {
@@ -45,11 +47,36 @@ export default function Work() {
                   <SheetTrigger asChild>
                     <Button className="capitalize ">preview</Button>
                   </SheetTrigger>
-                  <SheetContent side={project.side}>
-                    <SheetHeader>
+                  <SheetContent side={project.side} className="overflow-hidden">
+                    <SheetHeader className="px-12">
                       <SheetTitle color="var(--foreground)">
                         {project.name}
                       </SheetTitle>
+                      <Star6
+                        className="absolute sm:block  -top-25 -left-25.5 -z-10"
+                        strokeWidth={4}
+                        color="var(--main)"
+                        stroke="var(--main-foreground)"
+                        width={200}
+                        height={200}
+                      />
+                      <Star20
+                        className="absolute sm:block  top-42 -right-13 -z-10"
+                        strokeWidth={4}
+                        color="var(--main)"
+                        stroke="var(--main-foreground)"
+                        width={200}
+                        height={200}
+                      />
+                      <Star6
+                        className="absolute sm:block  -bottom-25 -right-25.5 -z-10"
+                        strokeWidth={4}
+                        color="var(--main)"
+                        stroke="var(--main-foreground)"
+                        width={200}
+                        height={200}
+                      />
+                      
                       <div className="flex border-border border-4 rounded-[5px]  p-2.5 gap-2.5 rounded-none bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px] rounded-base -bottom-[2px]! border-border shadow-shadow border-2 bg-secondary-background ">
                         {project.previewImages.length >= 1
                           ? project.previewImages.map((image, index) => (
@@ -68,18 +95,13 @@ export default function Work() {
                                   loading="eager"
                                   priority={true}
                                 />
-                                {/* <img
-                                  className="object-cover w-full h-60 "
-                                  src={image}
-                                  alt={`${project.name} preview ${index + 1}`}
-                                /> */}
                               </div>
                             ))
                           : null}
                       </div>
                       {/* <SheetDescription className="flex border-border border-4 rounded-[5px] bg-white p-2.5 gap-2.5 rounded-none  bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:36px_36px]  rounded-base -bottom-[2px]! border-border shadow-shadow border-2"></SheetDescription> */}
                     </SheetHeader>
-                    <div className="overflow-y-auto px-4 text-sm">
+                    <div className="overflow-y-auto px-12 text-sm">
                       <h4 className="mb-4 text-lg leading-none font-medium">
                         Project description
                       </h4>
