@@ -13,7 +13,7 @@ export default function Home() {
         <br />
         <p>
           Here’s a glimpse of my work as a Software engineer. Click the{" "}
-          <a className="font-heading underline" href="/about">
+          <a className="font-heading underline" href="/portfolio/about">
             link
           </a>{" "}
           to explore further!
